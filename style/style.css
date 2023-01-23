@@ -1,0 +1,43 @@
+body{
+  background-color: #f8eee127;
+}
+.burger:focus{
+  box-shadow: none;
+}
+.nav-btn-container{
+  width: 30%;
+}
+.btn-custom{
+  background-color: #B68C5A;
+  color: white;
+  font-size: 18px;
+  padding:16px 20px ;
+  transition: all ease-in .5s;
+}
+.btn-custom:hover{
+  background-color: #b68d5ae5;
+  box-shadow: none;
+  color: white;
+  transform: scale(1.01,1.01);
+}
+.btn-custom:focus{
+  box-shadow: none; 
+}
+.banner{
+  background-image: url("../images/banner.png");
+  height: 600px;
+  background-size: cover;
+  
+}
+.banner>div>form input{
+  margin-right: 20px;
+}
+@media screen and (max-width: 991.98px) { 
+  .nav-btn-container{
+    width: 100%;
+  }
+  .banner>div>form input{
+    margin-right: 0;
+    margin-bottom: 20px
+  }
+ }
