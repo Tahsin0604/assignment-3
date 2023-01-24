@@ -14,10 +14,10 @@ body{
   transition: all ease-in .5s;
 }
 .btn-custom:hover{
-  background-color: #b68d5ae5;
+  background-color: #b68d5aec;
   box-shadow: none;
   color: white;
-  transform: scale(1.01,1.01);
+  transform: scale(1.02,1.02);
 }
 .btn-custom:focus{
   box-shadow: none; 
@@ -27,6 +27,13 @@ body{
 }
 
 /* header */
+.navbar-nav .nav-item .nav-link{
+  transition: all ease-out .5s;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color: rgba(38, 19, 164, 0.784);
+  transform: scale(1.09,1.09);
+}
 .banner{
   background-image: url("../images/banner.png");
   height: 600px;
@@ -38,18 +45,33 @@ body{
 }
 
 /* Legal Practice Section */
+.legal-card{
+  cursor: pointer;
+  transition: all ease-out .4s;
+}
+.legal-card:hover{
+  border: 1px solid slategrey !important;
+}
+.legal-card .btn{
+  transition: all ease-in .4s;
+}
+.legal-card:hover .btn{
+  transform: scale(1.2,1.2);
+}
 .legal-card:nth-child(2){
   background-image:linear-gradient(to bottom, #00000016, #ffffff9d);
 }
 .legal-card img{
-  width: 70px;
-  height:70px;
+  width: 80px;
+  height:80px;
 }
-.legal-card .btn{
-  transition: all ease-in .8s;
+
+.legal-card .btn img{
+  width: 40px;
+  height:40px;
 }
 .legal-card .btn:hover{
-  transform: scale(1.08,1.08);
+  
 }
 
 /* Client Section */
@@ -64,14 +86,26 @@ body{
   height: 100px;
 }
 /* faq Section */
+.accordion-button:hover{
+  color: slateblue;
+  
+}
 .accordion-button:focus{
   box-shadow: none;
+  
+  background-color: white !;
+  
+}
+.accordion-button:not(.collapsed) {
+  color: slategrey;
+  background-color: #fff;
+  
 }
 .accordion-button::after{
   background-image: url("../images/plus.png");
 }
 .accordion-button:not(.collapsed)::after{
-  background-image: url("../images/minus-sign.png");
+  background-image: url("../images/minus-sign.png"); 
 }
 /* contact Section */
 .contact-card img{
@@ -85,7 +119,9 @@ body{
 .input-group input[type="text"]{
   border: 0;
 }
-
+footer .link ul li a:hover{
+  color: rgb(189, 177, 252) !important ;
+}
 
 @media screen and (max-width: 991.98px) { 
   /* header */
