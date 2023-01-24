@@ -32,7 +32,8 @@ body{
 }
 .navbar-nav .nav-item .nav-link:hover{
   color: rgba(38, 19, 164, 0.784);
-  transform: scale(1.03,1.03);
+  margin-left: 14px;
+  transform: scale(1.04,1.04);
 }
 .banner{
   background-image: url("../images/banner.png");
@@ -69,9 +70,6 @@ body{
 .legal-card .btn img{
   width: 40px;
   height:40px;
-}
-.legal-card .btn:hover{
-  
 }
 
 /* Client Section */
