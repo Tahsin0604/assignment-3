@@ -54,7 +54,7 @@ body{
   height: 100px;
 }
 /* faq Section */
-.accordion-button:hover{
+.accordion-button:focus{
   box-shadow: none;
 }
 .accordion-button::after{
