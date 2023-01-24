@@ -54,7 +54,11 @@ body{
   border: 1px solid slategrey !important;
 }
 .legal-card .btn{
+
   transition: all ease-in .4s;
+}
+.legal-card .btn:focus{
+  box-shadow: none;
 }
 .legal-card:hover .btn{
   transform: scale(1.2,1.2);
