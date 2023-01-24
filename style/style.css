@@ -4,9 +4,8 @@ body{
 .burger:focus{
   box-shadow: none;
 }
-.nav-btn-container{
-  width: 30%;
-}
+
+/* utility classes */
 .btn-custom{
   background-color: #B68C5A;
   color: white;
@@ -26,6 +25,8 @@ body{
 .form-control:focus{
   box-shadow: none;
 }
+
+/* header */
 .banner{
   background-image: url("../images/banner.png");
   height: 600px;
@@ -35,6 +36,13 @@ body{
 .banner>div>form input{
   margin-right: 20px;
 }
+
+/* Legal Practice Section */
+.legal-card:nth-child(2){
+  background-image:linear-gradient(to bottom, #00000016, #ffffff9d);
+}
+
+/* Client Section */
 .custom-slider{
   background-image:linear-gradient(to right, #0000009d, #0000009d), url("../images/banner.png");
   height: 600px;
@@ -45,30 +53,39 @@ body{
   width: 100px;
   height: 100px;
 }
+/* faq Section */
+.accordion-button:hover{
+  box-shadow: none;
+}
 .accordion-button::after{
   background-image: url("../images/plus.png");
 }
 .accordion-button:not(.collapsed)::after{
   background-image: url("../images/minus-sign.png");
 }
+/* contact Section */
 .contact-card img{
   width: 50px;
 }
+
+/* footer */
 .input-group,.input-group .btn-custom{
   border-radius: 5px !important;
 }
 .input-group input[type="text"]{
   border: 0;
 }
+
+
 @media screen and (max-width: 991.98px) { 
-  .nav-btn-container{
-    width: 100%;
-  }
+  /* header */
   .banner>div>form input{
     margin-right: 0;
     margin-bottom: 20px
   }
+  /* Legal Practice Section */
   .legal-card{
     border: 1px solid rgba(182, 171, 171, 0.42) !important;
+    background-image:linear-gradient(to bottom, #00000016, #ffffff9d);
   }
  }
