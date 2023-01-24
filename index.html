@@ -17,6 +17,7 @@
   </head>
   <body>
     <header>
+      <!-- nav section -->
       <nav class="navbar navbar-expand-lg navbar-light mt-4">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -63,13 +64,47 @@
               </li>
             </ul>
             <div class="d-lg-flex justify-content-end nav-btn-container">
-              <button class="btn btn-custom" type="submit">
+              <button class="btn btn-custom" data-bs-target="#exampleModal" data-bs-toggle="modal">
                 Free Consultation
               </button>
             </div>
           </div>
         </div>
       </nav>
+      <!-- modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Conact Us</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-grid gap-2 text-center">
+                <div>
+                  <h4>Address:</h4>
+                  <p>555 4th 5t NW, Washington
+                    <br />DC 20530, United States</p>
+                </div>
+                <div>
+                  <h4>Phone:</h4>
+                  <p>+88 01750 00 00 00
+                    <br />+88 01750 00 00 00</p>
+                </div>
+                <div>
+                  <h4>Mail:</h4>
+                  <p>info@gmail.com
+                    <br />info@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner -->
       <div class="banner img-fluid container mt-5 rounded-3">
         <div
           class="d-flex h-100 align-items-center justify-content-center flex-column g-3 text-light text-center p-5 w-75 mx-auto"
@@ -387,7 +422,7 @@
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      Accordion Item #1
+                      1. What is the difference between flexbox and grid?
                     </button>
                   </h2>
                   <div
@@ -396,16 +431,8 @@
                     aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample"
                   >
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
-                      It is shown by default, until the collapse plugin adds the
-                      appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                    <div class="accordion-body  text-start">
+                      The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
                     </div>
                   </div>
                 </div>
@@ -419,7 +446,7 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Accordion Item #2
+                      2. What is the purpose of media queries in CSS?
                     </button>
                   </h2>
                   <div
@@ -428,16 +455,8 @@
                     aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample"
                   >
-                    <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                    <div class="accordion-body  text-start">
+                      Media queries are a key part of responsive web design, as they allow you to create different layouts depending on the size of the viewport, but they can also be used to detect other things about the environment.
                     </div>
                   </div>
                 </div>
@@ -451,7 +470,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Accordion Item #3
+                      3. What is box-model and how does it work?
                     </button>
                   </h2>
                   <div
@@ -460,16 +479,9 @@
                     aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample"
                   >
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                    <div class="accordion-body  text-start">
+                      <strong>A box in CSS consists of a content area, which is where any text, images, or other HTML elements are displayed.</strong>
+                      <br />The box model describes how these elements work together to create a box as displayed by CSS.
                     </div>
                   </div>
                 </div>
@@ -483,7 +495,7 @@
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      Accordion Item #4
+                      4. What is semantic tag?
                     </button>
                   </h2>
                   <div
@@ -492,16 +504,20 @@
                     aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample"
                   >
-                    <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
-                      It is hidden by default, until the collapse plugin adds
-                      the appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                    <div class="accordion-body  text-start">
+                      The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages.
+                      <br />
+                      Example: 
+                     <ul class="list-unstyled">
+                      <li><strong>header:</strong> It defines a header for a web page.</li>
+                      <li><strong>nav:</strong> It defines a container for navigation links</li>
+                      <li><strong>section:</strong> This defines a section in a web page.</li>
+                      <li><strong>article:</strong> This element contains the main part, containing information about the web page.
+                        </li>
+                      <li><strong>aside:</strong> It is often placed as a sidebar in a document.</li>
+                      <li><strong>footer:</strong> It defines a footer for a document or a section.</li>
+
+                     </ul>
                     </div>
                   </div>
                 </div>
