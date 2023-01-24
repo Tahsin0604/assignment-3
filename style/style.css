@@ -23,6 +23,9 @@ body{
 .btn-custom:focus{
   box-shadow: none; 
 }
+.form-control:focus{
+  box-shadow: none;
+}
 .banner{
   background-image: url("../images/banner.png");
   height: 600px;
@@ -46,6 +49,9 @@ body{
 }
 .accordion-button:not(.collapsed)::after{
   background-image: url("../images/minus-sign.png");
+}
+.contact-card img{
+  width: 50px;
 }
 @media screen and (max-width: 991.98px) { 
   .nav-btn-container{
