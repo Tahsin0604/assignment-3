@@ -41,6 +41,12 @@ body{
 .custom-slider .slider-image{
   width: 120px;
 }
+.accordion-button::after{
+  background-image: url("../images/plus.png");
+}
+.accordion-button:not(.collapsed)::after{
+  background-image: url("../images/minus-sign.png");
+}
 @media screen and (max-width: 991.98px) { 
   .nav-btn-container{
     width: 100%;
