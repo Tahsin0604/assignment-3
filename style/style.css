@@ -41,6 +41,16 @@ body{
 .legal-card:nth-child(2){
   background-image:linear-gradient(to bottom, #00000016, #ffffff9d);
 }
+.legal-card img{
+  width: 70px;
+  height:70px;
+}
+.legal-card .btn{
+  transition: all ease-in .8s;
+}
+.legal-card .btn:hover{
+  transform: scale(1.08,1.08);
+}
 
 /* Client Section */
 .custom-slider{
