@@ -32,6 +32,15 @@ body{
 .banner>div>form input{
   margin-right: 20px;
 }
+.custom-slider{
+  background-image:linear-gradient(to right, #0000009d, #0000009d), url("../images/banner.png");
+  height: 600px;
+  background-size: cover;
+  border-radius: 20px;
+}
+.custom-slider .slider-image{
+  width: 120px;
+}
 @media screen and (max-width: 991.98px) { 
   .nav-btn-container{
     width: 100%;
@@ -39,5 +48,8 @@ body{
   .banner>div>form input{
     margin-right: 0;
     margin-bottom: 20px
+  }
+  .legal-card{
+    border: 1px solid rgba(182, 171, 171, 0.42) !important;
   }
  }
